@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1009502439495",
+    "firebase_url": "https://lemonlights-fb.firebaseio.com",
+    "project_id": "lemonlights-fb",
+    "storage_bucket": "lemonlights-fb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1009502439495:android:48af794546ecc3c8",
+        "android_client_info": {
+          "package_name": "com.lemonlights.lemon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1009502439495-rr715bjdbktveusn8q3b7h0t4u4lfei0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lemonlights.lemon",
+            "certificate_hash": "978ba6f5dd54bee17a607971e47cc3908989277c"
+          }
+        },
+        {
+          "client_id": "1009502439495-rvvb4iqanumn6lrifi278ukitvh6qb4e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDf3kbwSocZpUtU737JJ0yiZWA59g6_eQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1009502439495-rvvb4iqanumn6lrifi278ukitvh6qb4e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
