@@ -6,4 +6,16 @@
 
     <color name="btnSignUp">#614994</color>
     <color name="btnSignActive">#9e5dee</color>
+
+    <color name="overlayBackground">#1b0d26</color>
+    <color name="overlayActionBar">#231130</color>
+
+    <color name="itemTextColor">#eed8ff</color>
+
+    <color name="cardtxtbg" alpha="0.4">#5b000000</color>
+
+
+
+
+
 </resources>

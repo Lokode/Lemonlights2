@@ -1,6 +1,7 @@
 package com.lemonlights.lemon;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
@@ -14,6 +15,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.lemonlights.lemon.Common.Common;
 import com.lemonlights.lemon.Model.User;
 import com.rengwuxian.materialedittext.MaterialEditText;
 
@@ -57,7 +59,14 @@ public class SignIn extends AppCompatActivity {
                             mDialog.dismiss();
                             User user = dataSnapshot.child(edtPhone.getText().toString()).getValue(User.class);
                             if (user.getPassword().equals(edtPassword.getText().toString())) {
-                                Toast.makeText(SignIn.this, "Sign in successful!", Toast.LENGTH_SHORT).show();
+                                //if user enters correct login, take me to main menu..
+                                {
+                                    Intent homeIntent = new Intent(SignIn.this,Home.class);
+                                    Common.currentUser = user; //called from common/common.java
+                                    startActivity(homeIntent);
+                                    finish(); //next,went to home
+
+                                }
                             } else {
                                 Toast.makeText(SignIn.this, "Wrong Password", Toast.LENGTH_SHORT).show();
                             }
